@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="8"
+    tools:context="com.gal.deliveriez.FragmentValidator">
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Title"/>
+    <Spinner
+        android:id="@+id/role_spinner"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter your first name"
+        android:inputType="textCapWords"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/grey_500"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter your last name"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:textColorHint="@color/grey_500"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textCapWords"
+        android:imeOptions="actionNext"
+        android:hint="Enter your address"
+        android:visibility="gone"
+        android:textColorHint="@color/grey_500"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:inputType="phone"
+        android:hint="Enter your phone number"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/grey_500"
+        android:layout_height="0dp" />
+
+
+
+</LinearLayout>
